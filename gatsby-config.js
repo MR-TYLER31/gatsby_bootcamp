@@ -1,18 +1,33 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Full-Stack Bootcamp!',
-    author: 'Tyler Snyder'
+    title: "Full-Stack Bootcamp!",
+    author: "Tyler Snyder",
   },
   plugins: [
-    'gatsby-plugin-sass',
+    "gatsby-plugin-sass",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'src',
-        path:`${__dirname}/src/`
+        name: "src",
+        path: `${__dirname}/src/`,
+      },
+    },
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugin: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false
+            }
+          }
+        ]
       }
     },
-    'gatsby-transformer-remark'
   ],
 }
