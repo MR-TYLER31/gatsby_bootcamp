@@ -8,7 +8,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <Head />
+      <Head title="Home"/>
       <h1>Hello.</h1>
       <h2>
         I'm Tyler, a full-stack developer living in beautiful South Jordan
