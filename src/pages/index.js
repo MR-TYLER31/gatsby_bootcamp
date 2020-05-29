@@ -13,9 +13,6 @@ const IndexPage = () => {
       <h2>
         I'm Tyler, a full-stack developer living in beautiful South Jordan
       </h2>
-      <p>
-        Need a developer? <Link to="/contact">Contact me.</Link>
-      </p>
     </Layout>
   )
 }
